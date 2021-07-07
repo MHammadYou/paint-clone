@@ -4,7 +4,7 @@
   "description": "Windows Paint Tool Clone",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "parcel serve src/index.html"
   },
   "repository": {
     "type": "git",
@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/MHammadYou/paint-clone/issues"
   },
-  "homepage": "https://github.com/MHammadYou/paint-clone#readme"
+  "homepage": "https://github.com/MHammadYou/paint-clone#readme",
+  "dependencies": {
+    "parcel-bundler": "^1.12.5"
+  }
 }
