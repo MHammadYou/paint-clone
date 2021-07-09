@@ -1,8 +1,5 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import App from "./App";
 
-ReactDOM.render(<h1>React-Electron</h1>, document.getElementById("app"));
-
-// try {
-//   require("electron-reloader")(module);
-// } catch (_) {}
+ReactDOM.render(<App />, document.getElementById("app"));
