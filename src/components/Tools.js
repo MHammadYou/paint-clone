@@ -3,7 +3,7 @@ import { Tool1 } from "./tools/index";
 
 function Tools() {
   return (
-    <div style={{ backgroundColor: "red" }}>
+    <div style={{ backgroundColor: "red" }} className={"tools"}>
       <Tool1 />
     </div>
   );

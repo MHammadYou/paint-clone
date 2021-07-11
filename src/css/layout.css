@@ -1,0 +1,46 @@
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+.main-flex-c1 {
+  flex: 4;
+}
+
+.main-flex-c2 {
+  flex: 1;
+}
+
+.main-flex-c1,
+.main-flex-c2 {
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar-container {
+  flex: 1;
+}
+
+.canvas-container {
+  flex: 11;
+}
+
+.tools-container {
+  flex: 25;
+}
+
+.properties-container {
+  flex: 30;
+}
+
+.colors-container {
+  flex: 45;
+}
+
+.navbar,
+.canvas,
+.tools,
+.properties,
+.colors {
+  height: 100%;
+}
