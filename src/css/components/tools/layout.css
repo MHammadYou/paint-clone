@@ -1,0 +1,14 @@
+.tools {
+  display: flex;
+  flex-direction: column;
+}
+
+.tools-heading-container {
+  background-color: orange;
+  flex: 1;
+}
+
+.tools-container {
+  background-color: aqua;
+  flex: 5;
+}
