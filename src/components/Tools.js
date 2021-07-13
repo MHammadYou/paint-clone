@@ -1,6 +1,7 @@
 import React from "react";
 import { Tool1, ToolsHeading } from "./tools/index";
 import "../css/components/tools/layout.css"
+import "../css/components/tools/styles.css"
 
 function Tools() {
   return (
@@ -8,7 +9,7 @@ function Tools() {
       <div className="tools-heading-container">
         <ToolsHeading heading={"Marker"}/>
       </div>
-      <div className="tools-container">
+      <div className="all-tools">
         <div className="tools-row-1">
           <Tool1 />
           <Tool1 />

@@ -8,7 +8,20 @@
   flex: 1;
 }
 
-.tools-container {
+.all-tools {
   background-color: aqua;
-  flex: 5;
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  padding: 1% 7%;
+}
+
+.tools-heading {
+}
+
+.tools-row-1,
+.tools-row-2 {
+  display: flex;
+  flex: 1;
+  background-color: black;
 }
