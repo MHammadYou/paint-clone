@@ -1,3 +1,9 @@
 .tools-heading {
   font-size: 20px;
 }
+
+.tool {
+  height: 6vh;
+  width: 3.5vw;
+  background-color: red;
+}
