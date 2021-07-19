@@ -1,9 +1,12 @@
 import React from "react";
+import { ColorsManager, ColorsPalette, RecentColors } from "./colors/index";
 
 function Colors() {
   return (
     <div style={{ backgroundColor: "green" }} className={"colors"}>
-      <h1>Colors</h1>
+      <ColorsManager />
+      <ColorsPalette />
+      <RecentColors />
     </div>
   );
 }
