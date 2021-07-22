@@ -3,7 +3,7 @@ import React from "react";
 
 export default function ColorsManager() {
   return (
-    <div>
+    <div className={"colors-manager"}>
       ColorsManager
     </div>
   )

@@ -3,7 +3,7 @@ import React from "react";
 
 export default function ColorsPalette() {
   return (
-    <div>
+    <div className={"colors-palette"}>
       Color Palette
     </div>
   )
