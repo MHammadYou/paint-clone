@@ -1,2 +1,9 @@
 export { default as ToolsHeading } from "./ToolsHeading";
-export { default as Tool1 } from "./Tool1";
+export { default as Marker } from "./Marker";
+export { default as Crayon } from "./Crayon";
+export { default as Eraser } from "./Eraser";
+export { default as OilPaint } from "./OilPaint";
+export { default as Pencil } from "./Pencil";
+export { default as PixelPen } from "./PixelPen";
+export { default as SprayCan } from "./SprayCan";
+export { default as WaterColor } from "./WaterColor";
