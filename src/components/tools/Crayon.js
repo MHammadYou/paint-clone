@@ -1,8 +1,10 @@
 import React from "react";
+import crayon from "../../../assets/pictures/tools/crayon.png";
+
 
 function Crayon() {
   return (
-    <div className={"tool"}>Crayon</div>
+    <img src={crayon} alt="crayon" className={"tool crayon"} />
   );
 }
 

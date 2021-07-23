@@ -1,8 +1,9 @@
 import React from "react";
+import waterColor from "../../../assets/pictures/tools/water color.png";
 
 function WaterColor() {
   return (
-    <div className={"tool"}>WaterColor</div>
+    <img src={waterColor} alt="water-color" className={"tool water-color"} />
   );
 }
 

@@ -3,7 +3,21 @@
 }
 
 .tool {
-  height: 6vh;
+  height: 6.5vh;
   width: 3.5vw;
-  background-color: red;
+}
+
+.tool:hover {
+  border: 1px solid blue;
+  background-color: white;
+}
+
+.tools-heading {
+  color: #0064b6;
+  font-size: 20px;
+}
+.tools-heading-container {
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
 }

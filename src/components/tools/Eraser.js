@@ -1,8 +1,9 @@
 import React from "react";
+import eraser from "../../../assets/pictures/tools/eraser.png";
 
 function Eraser() {
   return (
-    <div className={"tool"}>Eraser</div>
+    <img src={eraser} alt="eraser" className={"tool eraser"} />
   );
 }
 

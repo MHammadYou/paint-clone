@@ -1,8 +1,9 @@
 import React from "react";
+import pencil from "../../../assets/pictures/tools/pencil.png";
 
 function Pencil() {
   return (
-    <div className={"tool"}>Pencil</div>
+    <img src={pencil} alt="pencil" className={"tool pencil"} />
   );
 }
 

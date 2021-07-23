@@ -1,8 +1,9 @@
 import React from "react";
+import pixelPen from "../../../assets/pictures/tools/pixel pen.png";
 
 function PixelPen() {
   return (
-    <div className={"tool"}>PixelPen</div>
+    <img src={pixelPen} alt="pixel-pen" className={"tool pixel-pen"} />
   );
 }
 
