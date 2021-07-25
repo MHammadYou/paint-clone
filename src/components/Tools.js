@@ -18,16 +18,32 @@ function Tools() {
       </div>
       <div className="all-tools">
         <div className="tools-row-1">
-          <Marker />
-          <OilPaint onClick={() => console.log("Working")}/>
-          <WaterColor />
-          <PixelPen />
+          <div onClick={() => handleClick("Marker")}>
+            <Marker />
+          </div>
+          <div onClick={() => handleClick("Oil brush")}>
+            <OilPaint/>
+          </div>
+          <div onClick={() => handleClick("Watercolor")}>
+            <WaterColor />
+          </div>
+          <div onClick={() => handleClick("Pixel pen")}>
+            <PixelPen />
+          </div>
         </div>
         <div className="tools-row-2">
-          <Pencil />
-          <Eraser />
-          <Crayon />
-          <SprayCan />
+          <div onClick={() => handleClick("Pencil")}>
+            <Pencil />
+          </div>
+          <div onClick={() => handleClick("Eraser")}>
+            <Eraser />
+          </div>
+          <div onClick={() => handleClick("Crayon")}>
+            <Crayon />
+          </div>
+          <div onClick={() => handleClick("Spray can")}>
+            <SprayCan />
+          </div>
         </div>
       </div>
     </div>
