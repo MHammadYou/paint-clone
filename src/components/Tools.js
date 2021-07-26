@@ -5,16 +5,16 @@ import "../css/components/tools/styles.css"
 
 function Tools() {
 
-  const [heading, setHeading] = useState("Marker");
+  const [tool, setTool] = useState("Marker");
 
-  const handleClick = newHeading => {
-    setHeading(newHeading);
+  const handleClick = newTool => {
+    setTool(newTool);
   }
 
   return (
     <div className={"tools"}>
       <div className="tools-heading-container">
-        <ToolsHeading heading={heading}/>
+        <ToolsHeading heading={tool}/>
       </div>
       <div className="all-tools">
         <div className="tools-row-1">

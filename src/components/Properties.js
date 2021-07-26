@@ -1,12 +1,16 @@
 import React from "react";
-import Opacity from "./properties/Opacity";
-import Thickness from "./properties/Thickness";
+import { Opacity, Thickness } from "./properties/index";
+import "../css/components/properties/layout.css"
 
 function Properties() {
   return (
     <div style={{ backgroundColor: "blue" }} className={"properties"}>
-      <Opacity />
-      <Thickness />
+      <div className={"opacity-container"}>
+        <Opacity />
+      </div>
+      <div className={"thickness-container"}>
+        <Thickness />
+      </div>
     </div>
   );
 }

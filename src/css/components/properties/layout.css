@@ -1,0 +1,9 @@
+.properties {
+  display: flex;
+  flex-direction: column;
+}
+
+.opacity-container,
+.thickness-container {
+  flex: 1;
+}
