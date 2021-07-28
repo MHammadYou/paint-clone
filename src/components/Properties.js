@@ -4,7 +4,7 @@ import "../css/components/properties/layout.css"
 
 function Properties() {
   return (
-    <div style={{ backgroundColor: "blue" }} className={"properties"}>
+    <div className={"properties"}>
       <div className={"opacity-container"}>
         <Opacity />
       </div>
