@@ -1,6 +1,7 @@
 import React from "react";
 import { Opacity, Thickness } from "./properties/index";
 import "../css/components/properties/layout.css"
+import "../css/components/properties/styles.css"
 
 function Properties() {
   return (
