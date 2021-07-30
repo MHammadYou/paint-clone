@@ -3,7 +3,7 @@ import React from "react";
 
 export default function Thickness() {
   return (
-    <div>
+    <div style={{"background-color": "blue"}} className={"property"}>
       <div className="thickness-heading prop-heading">
         Thickness
       </div>

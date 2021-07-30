@@ -3,7 +3,7 @@ import React from "react";
 
 export default function Opacity() {
   return (
-    <div>
+    <div style={{"background-color": "red"}} className={"property"}>
       <div className="opacity-heading prop-heading">
         Opacity
       </div>
