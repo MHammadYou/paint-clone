@@ -7,7 +7,7 @@ export default function Thickness() {
       <div className="thickness-heading prop-heading">
         Thickness
       </div>
-      <form action="">
+      <form action="" className={"thickness-slider prop-slider"}>
         <input type="range" min="1" max="100" value="50" className="slider" id="myRange" />
       </form>
     </div>

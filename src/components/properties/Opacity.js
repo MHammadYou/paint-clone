@@ -7,7 +7,7 @@ export default function Opacity() {
       <div className="opacity-heading prop-heading">
         Opacity
       </div>
-      <form action="">
+      <form action="" className={"opacity-slider prop-slider"}>
         <input type="range" min="1" max="100" value="50" className="slider" id="myRange" />
       </form>
     </div>

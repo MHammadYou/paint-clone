@@ -7,6 +7,18 @@
   height: 100%;
   display: flex;
   flex-direction: column;
+  font-size: 18px;
+}
+
+.prop-heading {
+  flex: 3;
+  align-items: center;
+  padding-left: 10px;
+  padding-top: 2px;
+}
+
+.prop-slider {
+  flex: 7;
 }
 
 
