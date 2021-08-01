@@ -1,5 +1,5 @@
 .properties {
-  color: #0064b6;
+  font-size: 14px;
 }
 
 .property {
@@ -7,7 +7,6 @@
   height: 100%;
   display: flex;
   flex-direction: column;
-  font-size: 18px;
 }
 
 .prop-heading {
