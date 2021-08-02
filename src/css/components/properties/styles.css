@@ -9,19 +9,33 @@
   flex-direction: column;
 }
 
-.prop-heading {
-  flex: 3;
+.prop-top {
+  flex: 1;
+  display: flex;
   align-items: center;
-  padding-left: 10px;
-  padding-top: 2px;
+  padding: 0 10px;
 }
+
+.prop-heading {
+  flex: 1;
+}
+
+.prop-input {
+  background-color: white;
+  border: 1px #d4d9e2 solid;
+  width: 80px;
+  height: 30px;
+  text-align: end;
+  padding-right: 15px;
+}
+
+
 
 .prop-slider {
-  flex: 7;
+  flex: 1;
+  padding: 10px;
 }
 
-
 .slider {
-  width: 80%;
-
+  width: 100%;
 }

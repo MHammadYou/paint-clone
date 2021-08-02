@@ -32,6 +32,7 @@
 
 .properties-container {
   flex: 30;
+  padding-top: 20px;
 }
 
 .colors-container {

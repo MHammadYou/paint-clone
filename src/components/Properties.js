@@ -6,11 +6,11 @@ import "../css/components/properties/styles.css"
 function Properties() {
   return (
     <div className={"properties"}>
-      <div className={"opacity-container"}>
-        <Opacity />
-      </div>
       <div className={"thickness-container"}>
         <Thickness />
+      </div>
+      <div className={"opacity-container"}>
+        <Opacity />
       </div>
     </div>
   );

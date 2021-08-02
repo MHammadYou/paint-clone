@@ -5,7 +5,7 @@ export default function Opacity() {
 
   const [opacity, setOpacity] = useState(10);
 
-  const handleChange = (e) => {
+  const handleChange = e => {
 
     if (e.target.value > 100) {
       e.target.value = 100;
@@ -17,9 +17,11 @@ export default function Opacity() {
   }
 
   return (
-    <div style={{"backgroundColor": "red"}} className={"property"}>
-      <div className="opacity-heading prop-heading">
-        Opacity
+    <div className={"property"}>
+      <div className="prop-top">
+        <div className="opacity-heading prop-heading">
+          Opacity
+        </div>
         <input type="text" value={opacity} className={"prop-input opacity-input"} onChange={handleChange}/>
       </div>
       <form action="" className={"opacity-slider prop-slider"}>

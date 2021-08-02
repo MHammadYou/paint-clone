@@ -5,7 +5,7 @@ export default function Thickness() {
 
   const [thickness, setThickness] = useState(10);
 
-  const handleChange = (e) => {
+  const handleChange = e => {
 
     if (e.target.value > 100) {
       e.target.value = 100;
@@ -17,9 +17,11 @@ export default function Thickness() {
   }
 
   return (
-    <div style={{"backgroundColor": "blue"}} className={"property"}>
-      <div className="thickness-heading prop-heading">
-        Thickness
+    <div className={"property"}>
+      <div className="prop-top">
+        <div className="thickness-heading prop-heading">
+          Thickness
+        </div>
         <input type="text" value={thickness} className={"prop-input thickness-input"} onChange={handleChange}/>
       </div>
       <form action="" className={"thickness-slider prop-slider"}>
