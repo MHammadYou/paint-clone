@@ -13,7 +13,7 @@
   flex: 1;
   display: flex;
   align-items: center;
-  padding: 0 10px;
+  padding: 0 20px;
 }
 
 .prop-heading {
@@ -23,17 +23,16 @@
 .prop-input {
   background-color: white;
   border: 1px #d4d9e2 solid;
+  border-radius: 2px;
   width: 80px;
   height: 30px;
   text-align: end;
   padding-right: 15px;
 }
 
-
-
 .prop-slider {
   flex: 1;
-  padding: 10px;
+  padding: 20px;
 }
 
 .slider {

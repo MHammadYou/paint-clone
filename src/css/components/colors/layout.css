@@ -1,0 +1,36 @@
+.colors {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 20px;
+}
+
+
+.colors-top {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  background-color: brown;
+}
+
+.color-editor-container {
+  height: 40px;
+  background-color: orange;
+  flex: 7;
+  margin-right: 3%;
+}
+
+.eye-dropper-container {
+  height: 40px;
+  flex: 3;
+  background-color: blue;
+}
+
+.color-palette-container {
+  flex: 3;
+  background-color: crimson;
+}
+
+.recent-colors-container {
+  flex: 1;
+  background-color: deeppink;
+}
