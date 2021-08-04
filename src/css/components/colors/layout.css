@@ -9,14 +9,19 @@
   flex: 1;
   display: flex;
   align-items: center;
-  background-color: brown;
 }
 
 .color-editor-container {
   height: 40px;
-  background-color: orange;
   flex: 7;
   margin-right: 3%;
+}
+
+.color-editor,
+.eye-dropper,
+.colors-palette,
+.recent-colors {
+  height: 100%;
 }
 
 .eye-dropper-container {
@@ -27,7 +32,6 @@
 
 .color-palette-container {
   flex: 3;
-  background-color: crimson;
 }
 
 .recent-colors-container {

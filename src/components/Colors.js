@@ -1,10 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import { ColorEditor, EyeDropper, ColorsPalette, RecentColors } from "./colors/index";
 import "../css/components/colors/layout.css";
 
 function Colors() {
+
+
+
   return (
-    <div style={{ backgroundColor: "green" }} className={"colors"}>
+    <div className={"colors"}>
       <div className="colors-top">
         <div className="color-editor-container">
           <ColorEditor />
