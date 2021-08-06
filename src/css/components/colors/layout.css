@@ -34,6 +34,24 @@
   flex: 3;
 }
 
+.colors-palette {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.top-palette-colors,
+.mid-palette-colors,
+.bot-palette-colors {
+  width: 100%;
+  display: flex;
+}
+
+.palette {
+  width: 100%;
+  height: 40px;
+}
+
 .recent-colors-container {
   flex: 1;
   background-color: deeppink;

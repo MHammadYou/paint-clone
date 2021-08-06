@@ -8,7 +8,7 @@ export default function Palette(props) {
 
   return (
     <div className={"palette"} style={{"backgroundColor": props.color}} onClick={handleChange}>
-      Palette
+
     </div>
   )
 }

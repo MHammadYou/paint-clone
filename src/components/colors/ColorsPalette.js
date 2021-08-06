@@ -5,32 +5,29 @@ import Palette from "./Palette";
 export default function ColorsPalette() {
 
   const AllColors = [
-    ["black", "blue", "orange", "violet", "#897321"],
-    ["#111", "#222", "#333", "#444", "#555", "#666"],
-    ["#111", "#222", "#333", "#444", "#555", "#666"],
+    "black", "blue", "orange", "violet", "#897321", "#678",
+    "#191", "#292", "#393", "#494", "#595", "#696",
+    "#111", "#222", "#333", "#444", "#555", "#666",
   ];
 
-  const topColors = [];
-  const midColors = [];
-  const botColors = [];
+  const colors = [];
 
-  for (let i = 0; i < AllColors[0].length; i++) {
-    topColors.push(<Palette color={AllColors[0][i]} key={i}/>)
-    midColors.push(<Palette color={AllColors[1][i]} key={i}/>)
-    botColors.push(<Palette color={AllColors[2][i]} key={i}/>)
+  for (let i = 0; i < AllColors.length; i++) {
+    colors.push(<Palette color={AllColors[i]} key={i} className={"palette"}/>)
   }
-  console.log(topColors)
+
+  console.log(colors)
 
   return (
-    <div className={"colors-palette"} style={{"backgroundColor": "blue"}}>
-      <div className="top-colors">
-        {topColors}
+    <div className={"colors-palette"}>
+      <div className="top-palette-colors">
+        {colors.slice(0, 6)}
       </div>
-      <div className="mid-colors">
-        {midColors}
+      <div className="mid-palette-colors">
+        {colors.slice(6, 12)}
       </div>
-      <div className="bot-colors">
-        {botColors}
+      <div className="bot-palette-colors">
+        {colors.slice(12, 18)}
       </div>
     </div>
   )

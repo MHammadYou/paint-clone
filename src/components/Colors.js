@@ -3,9 +3,6 @@ import { ColorEditor, EyeDropper, ColorsPalette, RecentColors } from "./colors/i
 import "../css/components/colors/layout.css";
 
 function Colors() {
-
-
-
   return (
     <div className={"colors"}>
       <div className="colors-top">
