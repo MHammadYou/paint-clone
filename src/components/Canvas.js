@@ -1,9 +1,10 @@
 import React from "react";
+import {CanvasManager} from "./canvas/index";
 
 function Canvas() {
   return (
     <div style={{ backgroundColor: "purple" }} className={"canvas"}>
-      <h1>Canvas</h1>
+      <CanvasManager />
     </div>
   );
 }
