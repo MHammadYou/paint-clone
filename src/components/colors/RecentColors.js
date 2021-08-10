@@ -13,6 +13,14 @@ export default function RecentColors() {
     queue.addElement(<Palette color={initialColors[i]} key={i} className={"palette"}/>)
   }
 
+  const styles = {
+    backgroundColor: "red",
+    display: "flex"
+  }
+
+  console.log(queue.getQueue())
+
+
   return (
     <div className={"recent-colors"}>
       {queue.getQueue()}

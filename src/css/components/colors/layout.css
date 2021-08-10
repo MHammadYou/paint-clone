@@ -47,11 +47,6 @@
   display: flex;
 }
 
-.recent-colors {
-  flex: 1;
-  flex-direction: column;
-}
-
 .palette {
   width: 100%;
   height: 40px;
@@ -59,5 +54,10 @@
 
 .recent-colors-container {
   flex: 1;
-  background-color: deeppink;
+}
+
+.recent-colors {
+  flex: 1;
+  flex-direction: column;
+  background-color: red;
 }
