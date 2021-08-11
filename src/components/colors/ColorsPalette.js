@@ -16,8 +16,6 @@ export default function ColorsPalette() {
     colors.push(<Palette color={AllColors[i]} key={i} className={"palette"}/>)
   }
 
-  console.log(colors)
-
   return (
     <div className={"colors-palette"}>
       <div className="top-palette-colors">

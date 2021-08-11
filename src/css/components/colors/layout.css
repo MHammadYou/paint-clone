@@ -58,6 +58,10 @@
 
 .recent-colors {
   flex: 1;
-  flex-direction: column;
-  background-color: red;
+  display: flex;
+  align-items: center;
+}
+
+.recent-palette {
+  flex: 1;
 }

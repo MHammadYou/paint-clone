@@ -7,9 +7,6 @@ class Queue {
   addElement(el) {
     if (this.queue.length <= this.size) {
       this.queue.push(el);
-      if (this.queue.length === this.size) {
-        this.queue.shift();
-      }
     }
   }
   addElements(...elements) {

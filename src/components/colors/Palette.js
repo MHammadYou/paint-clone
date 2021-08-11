@@ -6,8 +6,12 @@ export default function Palette(props) {
     console.log(props.color)
   }
 
+  const styles = {
+    backgroundColor: props.color
+  }
+
   return (
-    <div className={"palette"} style={{"backgroundColor": props.color}} onClick={handleChange}>
+    <div className={"palette"} style={styles} onClick={handleChange}>
 
     </div>
   )

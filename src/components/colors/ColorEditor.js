@@ -5,9 +5,12 @@ export default function ColorEditor(props) {
 
   const [ currentColor, setCurrentColor ] = useState("#100");
 
-  return (
-    <div className={"color-editor"} style={{"backgroundColor": currentColor}}>
+  const styles = {
+    backgroundColor: currentColor
+  }
 
+  return (
+    <div className={"color-editor"} style={styles}>
     </div>
   )
 }
