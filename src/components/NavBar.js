@@ -1,9 +1,10 @@
 import React from "react";
+import { NavbarMain } from "./navbar/index";
 
 function NavBar() {
   return (
     <div style={{ backgroundColor: "grey" }} className={"navbar"}>
-      <h1>Navbar</h1>
+      <NavbarMain />
     </div>
   );
 }
