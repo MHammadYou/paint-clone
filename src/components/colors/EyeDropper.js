@@ -6,7 +6,6 @@ export default function EyeDropper() {
   const [ bgColor, setBgColor ] = useState("#000");
 
   const handleChange = e => {
-    console.log(e.target.value);
     setBgColor(e.target.value);
   }
 
