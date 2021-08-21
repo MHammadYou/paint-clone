@@ -5,9 +5,9 @@ import Palette from "./Palette";
 export default function ColorsPalette() {
 
   const AllColors = [
-    "black", "blue", "orange", "violet", "#897321", "#678",
-    "#191", "#292", "#393", "#449944", "#595", "#696",
-    "#111", "#222", "#333", "#444", "#555", "#666",
+    "#ffffff", "#c3c3c3", "#585858", "#000000", "#88001b", "#ec1c24",
+    "#ff7f27", "#ffca18", "#fdeca6", "#fff200", "#c4ff0e", "#0ed145",
+    "#8cfffb", "#00a8f3", "#3f48cc", "#b83dba", "#ffaec8", "#b97a56",
   ];
 
   const colors = [];
