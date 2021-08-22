@@ -8,7 +8,13 @@ export default function CanvasManager() {
     console.log(e);
   }
 
+  const canvas = <canvas ref={"canvas"} id={"canvas"} onClick={handleClick}> </canvas>
+
+  console.log(canvas);
+
   return (
-    <canvas id={"canvas"} onClick={handleClick}></canvas>
+    <div>
+      {canvas}
+    </div>
   )
 }
