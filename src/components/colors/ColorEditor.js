@@ -1,8 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 import { useSelector } from "react-redux";
 
 
-export default function ColorEditor(props) {
+export default function ColorEditor() {
 
   const color = useSelector(state => state.colors.value)
 

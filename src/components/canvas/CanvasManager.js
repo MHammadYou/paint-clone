@@ -1,20 +1,30 @@
-import React from "react";
+import React, { useRef, useEffect } from "react";
 import "../../css/components/canvas/styles.css"
 
 
 export default function CanvasManager() {
 
-  const handleClick = e => {
-    console.log(e);
-  }
+  const canvasRef = useRef(null);
 
-  const canvas = <canvas id={"canvas"} onClick={handleClick}> </canvas>
+  const draw = ctx => {
+    ctx.fillStyle = "#000000";
+    ctx.beginPath();
+    ctx.arc(50, 100, 20, 0, 2 * Math.PI);
+    ctx.fill();
+  } 
 
-  console.log(canvas);
+  useEffect(() => {
+
+    const canvas = canvasRef.current;
+    const context = canvas.getContext("2d");
+
+    draw(context);
+  }, [draw])
+
 
   return (
     <div>
-      {canvas}
+      <canvas ref={canvasRef}/>
     </div>
   )
 }

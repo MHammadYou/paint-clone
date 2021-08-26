@@ -9,7 +9,7 @@ export default function Palette(props) {
 
   const handleChange = () => {
     dispatch(changeColor(props.color))
-  } 
+  }
 
   const styles = {
     backgroundColor: props.color
