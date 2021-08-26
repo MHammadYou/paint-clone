@@ -1,10 +1,15 @@
 import React from "react";
+import { useDispatch } from "react-redux";
+
+import { changeColor } from "./colorsSlice";
 
 export default function Palette(props) {
 
+  const dispatch = useDispatch()
+
   const handleChange = () => {
-    console.log(props.color)
-  }
+    dispatch(changeColor(props.color))
+  } 
 
   const styles = {
     backgroundColor: props.color

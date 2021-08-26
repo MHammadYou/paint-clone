@@ -1,12 +1,13 @@
 import React, { useState } from "react";
+import { useSelector } from "react-redux";
 
 
 export default function ColorEditor(props) {
 
-  const [ currentColor, setCurrentColor ] = useState("#100");
+  const color = useSelector(state => state.colors.value)
 
   const styles = {
-    backgroundColor: currentColor
+    backgroundColor: color
   }
 
   return (
