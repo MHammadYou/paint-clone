@@ -3,7 +3,7 @@ import {CanvasManager} from "./canvas/index";
 
 function Canvas() {
   return (
-    <div style={{ backgroundColor: "purple" }} className={"canvas"}>
+    <div className={"canvas-container"}>
       <CanvasManager />
     </div>
   );

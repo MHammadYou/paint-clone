@@ -11,20 +11,25 @@ export default function CanvasManager() {
     ctx.beginPath();
     ctx.arc(50, 100, 20, 0, 2 * Math.PI);
     ctx.fill();
-  } 
+  }
+
+  const handleClick = e => {
+    console.log(e)
+  }
 
   useEffect(() => {
 
     const canvas = canvasRef.current;
     const context = canvas.getContext("2d");
 
+    canvas.width = innerWidth * 4 / 5;
+    canvas.height = innerHeight * 91 / 100;
+
     draw(context);
   }, [draw])
 
 
   return (
-    <div>
-      <canvas ref={canvasRef}/>
-    </div>
+    <canvas ref={canvasRef} onClick={handleClick}/>
   )
 }
