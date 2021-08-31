@@ -1,9 +1,13 @@
-import React, { useState } from "react";
+import React from "react";
+import { useSelector, useDispatch } from "react-redux";
+
+import { changeOpacity } from "./opacitySlice";
 
 
 export default function Opacity() {
 
-  const [opacity, setOpacity] = useState(10);
+  const opacity = useSelector(state => state.opacity.value);
+  const dispatch = useDispatch()
 
   const handleChange = e => {
 
@@ -13,7 +17,7 @@ export default function Opacity() {
     if (e.target.value < 1) {
       e.target.value = 1;
     }
-    setOpacity(e.target.value);
+    dispatch(changeOpacity(e.target.value))
   }
 
   return (

@@ -4,7 +4,7 @@ import { createSlice } from "@reduxjs/toolkit"
 export const opacitySlice = createSlice({
   name: 'opacity',
   initialState: {
-    value: 0
+    value: 10
   },
   reducers: {
     changeOpacity: (state, action) => {

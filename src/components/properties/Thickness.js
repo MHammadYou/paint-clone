@@ -1,9 +1,12 @@
-import React, { useState } from "react";
+import React from "react";
+import { useSelector, useDispatch } from "react-redux";
+import { changeThickness } from "./thicknessSlice";
 
 
 export default function Thickness() {
 
-  const [thickness, setThickness] = useState(10);
+  const thickness = useSelector(state => state.thickness.value);
+  const dispatch = useDispatch();
 
   const handleChange = e => {
 
@@ -13,7 +16,7 @@ export default function Thickness() {
     if (e.target.value < 1) {
       e.target.value = 1;
     }
-    setThickness(e.target.value);
+    dispatch(changeThickness(e.target.value));
   }
 
   return (
