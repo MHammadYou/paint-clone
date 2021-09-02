@@ -1,14 +1,19 @@
-import React, { useState } from "react";
+import React from "react";
+import { useSelector, useDispatch } from "react-redux";
+import { changeTool } from "./tools/toolsSlice";
 import { Marker, OilPaint, WaterColor, PixelPen, Pencil, Eraser, Crayon, SprayCan, ToolsHeading } from "./tools/index";
 import "../css/components/tools/layout.css"
 import "../css/components/tools/styles.css"
 
 function Tools() {
 
-  const [tool, setTool] = useState("Marker");
+  const tool = useSelector(state => state.tools.value);
+  const dispatch = useDispatch();
 
-  const handleClick = newTool => {
-    setTool(newTool);
+  const tools = ["Marker", "Oil brush", "Watercolor", "Pixel pen", "Pencil", "Eraser", "Crayon", "Spray can"];
+
+  const handleClick = toolId => {
+    dispatch(changeTool(tools[toolId]));
   }
 
   return (
@@ -18,30 +23,30 @@ function Tools() {
       </div>
       <div className="all-tools">
         <div className="tools-row-1">
-          <div onClick={() => handleClick("Marker")}>
+          <div onClick={() => handleClick(0)}>
             <Marker />
           </div>
-          <div onClick={() => handleClick("Oil brush")}>
+          <div onClick={() => handleClick(1)}>
             <OilPaint/>
           </div>
-          <div onClick={() => handleClick("Watercolor")}>
+          <div onClick={() => handleClick(2)}>
             <WaterColor />
           </div>
-          <div onClick={() => handleClick("Pixel pen")}>
+          <div onClick={() => handleClick(3)}>
             <PixelPen />
           </div>
         </div>
         <div className="tools-row-2">
-          <div onClick={() => handleClick("Pencil")}>
+          <div onClick={() => handleClick(4)}>
             <Pencil />
           </div>
-          <div onClick={() => handleClick("Eraser")}>
+          <div onClick={() => handleClick(5)}>
             <Eraser />
           </div>
-          <div onClick={() => handleClick("Crayon")}>
+          <div onClick={() => handleClick(6)}>
             <Crayon />
           </div>
-          <div onClick={() => handleClick("Spray can")}>
+          <div onClick={() => handleClick(7)}>
             <SprayCan />
           </div>
         </div>
