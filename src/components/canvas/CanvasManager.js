@@ -17,6 +17,7 @@ export default function CanvasManager() {
     console.log(e)
   }
 
+
   useEffect(() => {
 
     const canvas = canvasRef.current;

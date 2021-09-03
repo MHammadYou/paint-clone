@@ -15,7 +15,6 @@ export default function EyeDropper() {
 
   return (
     <div className={"eye-dropper"} style={styles}>
-      <input type="color" onChange={handleChange}/>
     </div>
   )
 }
