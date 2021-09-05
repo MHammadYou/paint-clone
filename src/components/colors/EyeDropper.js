@@ -1,16 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 
 
-export default function EyeDropper() {
-
-  const [ bgColor, setBgColor ] = useState("#000");
-
-  const handleChange = e => {
-    setBgColor(e.target.value);
-  }
+function EyeDropper() {
 
   const styles = {
-    backgroundColor: bgColor
+    backgroundColor: "#000"
   }
 
   return (
@@ -18,3 +12,5 @@ export default function EyeDropper() {
     </div>
   )
 }
+
+export default EyeDropper;
