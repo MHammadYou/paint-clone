@@ -1,1 +1,2 @@
-Windows Paint Tool Clone
+# Paint Clone
+**Windows paint clone**
